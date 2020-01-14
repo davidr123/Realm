@@ -32,7 +32,7 @@ public class MainActivity extends Fragment {
                              Bundle savedInstanceState) {
 
         final GestureDetector gdt = new GestureDetector(getActivity(),
-                new RemoteGestureListener());
+                (GestureDetector.OnGestureListener) new RemoteGestureListener());
 
         View view = inflater.inflate(R.layout.gestures, container, false);
 
